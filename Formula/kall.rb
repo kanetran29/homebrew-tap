@@ -2,7 +2,7 @@ class Kall < Formula
   desc "Run commands across multiple projects in parallel"
   homepage "https://github.com/kanetran29/kall"
   url "https://github.com/kanetran29/kall/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "5b9297ff5d6b8ea150901b4317b43060db23b15e7e9d8c677853b48a3508c384"
+  sha256 "f814684b2e3abff92a0c0ed3279c9b2f4d74cebb0d8c5616763ad14b9a1b8386"
   license "MIT"
 
   def install
