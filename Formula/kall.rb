@@ -5,13 +5,13 @@
 class Kall < Formula
   desc "Run commands across multiple projects in parallel"
   homepage "https://github.com/kanetran29/kall"
-  version "2.1.3"
+  version "2.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kanetran29/kall/releases/download/v2.1.3/kall_2.1.3_darwin_amd64.tar.gz"
-      sha256 "e41ede8f61dbc95bba6f31a8f9f873fcd52b5848585247645b46d9442d4ccb18"
+      url "https://github.com/kanetran29/kall/releases/download/v2.1.4/kall_2.1.4_darwin_amd64.tar.gz"
+      sha256 "e48ad43fbc9ee6b24d488fe1bd98e7df1d8ca7ebb52f377d239aae97f00e120f"
 
       define_method(:install) do
         bin.install "kall"
@@ -22,8 +22,8 @@ class Kall < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kanetran29/kall/releases/download/v2.1.3/kall_2.1.3_darwin_arm64.tar.gz"
-      sha256 "08167f11f9def0bfa95d7a6d4e93ed845c09825f737501b4b7b05acee4883083"
+      url "https://github.com/kanetran29/kall/releases/download/v2.1.4/kall_2.1.4_darwin_arm64.tar.gz"
+      sha256 "3c1c92644cf08a65c8c2db41f65cea935d17f641448381696981e3ba6a770729"
 
       define_method(:install) do
         bin.install "kall"
@@ -37,8 +37,8 @@ class Kall < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanetran29/kall/releases/download/v2.1.3/kall_2.1.3_linux_amd64.tar.gz"
-      sha256 "dc6e5c77628bda0c3ff56e3b4bb03dfa2b9ce0081e5e11575a216c71ecc163fe"
+      url "https://github.com/kanetran29/kall/releases/download/v2.1.4/kall_2.1.4_linux_amd64.tar.gz"
+      sha256 "6906af9ef8e1b34a9f49cf13741d23b8ebfec5ebe248210b1705bcae09a133bb"
       define_method(:install) do
         bin.install "kall"
         man1.install "man/kall.1"
@@ -48,8 +48,8 @@ class Kall < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanetran29/kall/releases/download/v2.1.3/kall_2.1.3_linux_arm64.tar.gz"
-      sha256 "0f1845583a0caf716cf84f102518d3ad75889ad5e5f2aabaf705985ed93e07ee"
+      url "https://github.com/kanetran29/kall/releases/download/v2.1.4/kall_2.1.4_linux_arm64.tar.gz"
+      sha256 "9e53cb2f599922c0904d9635cba41371ce9f43b5173fef9c5e656b404f4164ca"
       define_method(:install) do
         bin.install "kall"
         man1.install "man/kall.1"
